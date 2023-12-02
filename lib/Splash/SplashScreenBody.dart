@@ -10,8 +10,19 @@ class SplashScreenBody extends StatefulWidget {
 class _SplashScreenBodyState extends State<SplashScreenBody> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      
+    return Container(
+      child: Column(
+        children: [
+          const Spacer(),
+          const Text.rich(TextSpan(
+              text: 'Fruits Market',
+              style: TextStyle(
+                  fontSize: 50,
+                  fontFamily: 'IBMPlexSans-Bold',
+                  color: Color.fromARGB(255, 228, 228, 228)))),
+          Image.asset('Assets/Images/splash_view_image.png'),
+        ],
+      ),
     );
   }
 }

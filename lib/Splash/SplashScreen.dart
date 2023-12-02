@@ -11,6 +11,9 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
-    return const SplashScreenBody();
+    return const SafeArea(
+      child: Scaffold(
+          backgroundColor: Color(0xFF69A03A), body: SplashScreenBody()),
+    );
   }
 }

@@ -12,13 +12,10 @@ class FruitsApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return const GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Fruits Market',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const SplashScreen(),
+      home: SplashScreen(),
     );
   }
 }
