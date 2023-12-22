@@ -67,6 +67,10 @@ flutter:
   assets:
     - Assets/Images/splash_view_image.png
     - Assets\Images\Custom Size.png
+    - Assets\Images\onboarding1.png
+    - Assets\Images\onboarding2.png
+    - Assets\Images\onboarding3.png
+    
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

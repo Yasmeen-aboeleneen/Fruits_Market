@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/Core/Constants/Constants.dart';
 import 'package:e_commerce_app/Splash/SplashScreenBody.dart';
 import 'package:flutter/material.dart';
 
@@ -12,8 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return const SafeArea(
-      child: Scaffold(
-          backgroundColor: Color(0xFF69A03A), body: SplashScreenBody()),
+      child: Scaffold(backgroundColor: KMainColor, body: SplashScreenBody()),
     );
   }
 }
