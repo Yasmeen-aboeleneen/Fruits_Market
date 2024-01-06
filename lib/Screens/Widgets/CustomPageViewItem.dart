@@ -17,7 +17,7 @@ class CustomPageViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const VerticalSpace(20),
+        const VerticalSpace(23),
         SizedBox(
             height: SizeConfig.DefaultSize! * 21, child: Image.asset(image!)),
         const VerticalSpace(5),
