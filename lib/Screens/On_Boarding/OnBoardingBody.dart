@@ -1,8 +1,11 @@
 import 'package:e_commerce_app/Core/Utils/Size_Config.dart';
 import 'package:e_commerce_app/Core/Widgets/Custom_Buttons.dart';
+import 'package:e_commerce_app/Screens/Auth/Pages/Login/Login_Screen.dart';
 import 'package:e_commerce_app/Screens/Widgets/CustomDotsIndicator.dart';
 import 'package:e_commerce_app/Screens/Widgets/CustomPageView.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 
 class OnBoardingBody extends StatefulWidget {
   const OnBoardingBody({super.key});
@@ -55,6 +58,17 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
             left: SizeConfig.DefaultSize! * 10,
             right: SizeConfig.DefaultSize! * 10,
             child: CustomGeneralButton(
+                onTap: () {
+                  if (pageController!.page! < 2) {
+                    pageController?.nextPage(
+                        duration: const Duration(milliseconds: 500),
+                        curve: Curves.easeIn);
+                  } else {
+                    Get.to(() => const LoginScreen(),
+                        transition: Transition.rightToLeft,
+                        duration: const Duration(milliseconds: 500));
+                  }
+                },
                 text: pageController!.hasClients
                     ? (pageController?.page == 2 ? 'Get Started' : 'Next')
                     : 'Next'))

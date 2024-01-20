@@ -33,6 +33,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_native_splash: ^2.3.8
+  font_awesome_flutter: ^10.6.0
   get: ^4.6.6
 
 flutter_native_splash:
@@ -62,6 +63,8 @@ flutter:
     - Assets\Images\onboarding1.png
     - Assets\Images\onboarding2.png
     - Assets\Images\onboarding3.png
+    - Assets\Images\logo.png
+    
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

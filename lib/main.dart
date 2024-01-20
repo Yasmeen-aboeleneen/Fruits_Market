@@ -16,7 +16,7 @@ class FruitsApp extends StatelessWidget {
       theme: ThemeData(fontFamily: 'IBMPlexSans-Bold'),
       debugShowCheckedModeBanner: false,
       title: 'Fruits Market',
-      home: SplashScreen(),
+      home:const SplashScreen(),
     );
   }
 }
